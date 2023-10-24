@@ -6,10 +6,15 @@
 
 /*Waves*/
 
+svg {
+  margin-bottom: -200px;
+  padding-bottom: -200px;
+}
 .waves {
+  margin: 0;
+  padding: 0;
   opacity: 0.4;
 }
-
 
 html {
   font-size: 1rem;
@@ -46,6 +51,7 @@ h6 {
 h1 {
   color: transparent;
   font-weight: 700;
+  padding-top: 100px;
   padding-bottom: 1rem;
   font-size: 3rem;
   animation: effect 5s linear infinite;
@@ -171,6 +177,14 @@ button a:hover {
 }
 
 /* FOOTER - Start */
+.footer {
+  height: 60px; /* Adjust the height as needed */
+  padding: 20px; /* Adjust the padding as needed */
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid #444; /* Use border-top instead of border-bottom for the footer */
+}
+
 .nav-link {
   color: #fb079a;
 }
@@ -181,6 +195,7 @@ button a:hover {
 
 .footsocial {
   color: whitesmoke;
+  line-height: 70px;
 }
 
 .footsocial:hover {
@@ -198,6 +213,8 @@ button a:hover {
 }
 
 .intro {
+  margin: 0px;
+  padding: 0px;
   font-size: 5rem;
   color: #c0f905;
 }
@@ -1416,12 +1433,15 @@ img.viewer {
 
 .navbar {
   -webkit-backdrop-filter: blur(8px);
+  padding-left: 20px;
+  padding-right: 20px;
   backdrop-filter: blur(8px);
-  padding: 20px;
+  border-bottom: 1px solid #444;
 }
 
 .navbar .navbar-nav .nav-link {
   color: white;
+  line-height: 50px;
 }
 
 .navbar-brand .fw-bold {
@@ -1450,7 +1470,9 @@ img.viewer {
     justify-content: center;
 } 
 .header .navbar-brand {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+  line-height: 70px;
+
 }
 .header .navbar-toggler {
   position: absolute;
@@ -1487,8 +1509,8 @@ img.viewer {
 .offcanvas {
   width: 100%;
   height: 100vh;
-  
-  margin-right: 60px;
+
+  margin-right: 0px;
 }
 
 .offcanvas .fa-close {
@@ -1503,6 +1525,22 @@ img.viewer {
 .offcanvas.show .nav-link {
   color: whitesmoke;
 }
+
+/* Define a CSS animation for the off-canvas menu */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Apply the animation to the off-canvas menu */
+.offcanvas {
+  animation: slideIn 0.5s ease-in-out; /* Adjust the duration and timing function as needed */
+}
+
 
 button.navbar-toggler {
   color: whitesmoke;
@@ -1535,7 +1573,7 @@ button.navbar-toggler {
 }
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
+@media (min-width: 1048px) and (max-width: 1199.98px) {
   p {
     color: orange;
   }
