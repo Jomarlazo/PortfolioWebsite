@@ -6,14 +6,18 @@
 
 /*Waves*/
 
-svg {
-  margin-bottom: -200px;
-  padding-bottom: -200px;
-}
+
 .waves {
   margin: 0;
   padding: 0;
   opacity: 0.4;
+}
+
+.splide__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
 }
 
 html {
@@ -37,6 +41,23 @@ body {
   /*================================================*/
 }
 
+/* Tech Stack */
+.techstack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px; /* Adjust this value to control the vertical gap */
+}
+
+/* Style the heading inside the Techstack section */
+
+/* Style the images within the Techstack section */
+.Techstack img {
+  /* Make the images visible */
+  opacity: 1;
+  transform: none;
+  padding: 0;
+  margin: 0;
+}
 /* Resume template specific styles  */
 
 h1,
@@ -51,7 +72,7 @@ h6 {
 h1 {
   color: transparent;
   font-weight: 700;
-  padding-top: 100px;
+  padding-top: 0px;
   padding-bottom: 1rem;
   font-size: 3rem;
   animation: effect 5s linear infinite;
@@ -105,6 +126,17 @@ h6 {
   padding-bottom: 1rem;
   text-transform: uppercase;
   color: #fb079a;
+}
+
+.Photo {
+  width: 400px;
+  height: auto;
+  border-radius: 400px;
+}
+
+.about-photos {
+  max-width: 360px;
+  max-height: auto;
 }
 
 p,
@@ -177,11 +209,16 @@ button a:hover {
 }
 
 /* FOOTER - Start */
-.footer {
+footer {
+  position: fixed;
+  align-items: center;
+  bottom: 0;
   height: 60px; /* Adjust the height as needed */
-  padding: 20px; /* Adjust the padding as needed */
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+  margin-bottom: -20px; /* Adjust the padding as needed */
+  padding-top: 1rem;
+  
+  line-height: 50px;
+  background-color: #1c1014;
   border-top: 1px solid #444; /* Use border-top instead of border-bottom for the footer */
 }
 
@@ -271,6 +308,41 @@ button a:hover {
   max-width: 960px;
   margin: 0 auto;
 }
+
+.projectbox {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/*Got code from https://www.w3schools.com/css/css3_borders.asp */
+.textbox {
+  border-radius: 25px;
+  background: darkslategrey;
+  margin-top: -20px;
+  
+  padding: 20px;
+  width: auto;
+  height: auto;
+}
+.textbox p {
+  color: whitesmoke;
+}
+
+.cleartextbox {
+  border-radius: 25px;
+  background: transparent;
+  border: 1px solid #444;
+  padding-left: 20px;
+  margin-bottom: 50px;
+  padding-right: 20px;
+  width: auto;
+  height: auto;
+}
+.cleartextbox p {
+  color: whitesmoke;
+}
+
+
 
 /* ============================================================
   SECTIONS
@@ -1577,6 +1649,15 @@ button.navbar-toggler {
   p {
     color: orange;
   }
+  svg {
+    margin-bottom: -100px;
+    padding-bottom: -100px;
+  }
+  
+  .svg-About {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
@@ -1584,12 +1665,32 @@ button.navbar-toggler {
   p {
     color: grey;
   }
+
+  svg {
+    margin-bottom: -200px;
+    padding-bottom: -200px;
+  }
+  
+  .svg-About {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 /* // Extra Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1400px) {
   p {
     color: #fb079a;
+  }
+
+  svg {
+    margin-bottom: -200px;
+    padding-bottom: -200px;
+  }
+  
+  .svg-About {
+    margin-bottom: -130px;
+    padding-bottom: -130px;
   }
 }
 
